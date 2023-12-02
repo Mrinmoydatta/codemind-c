@@ -7,4 +7,5 @@ int main()
     scanf("%d%d",&s1,&s2);
     h=sqrt(pow(s1,2)+pow(s2,2));
     printf("%.2f",h);
+
 }
