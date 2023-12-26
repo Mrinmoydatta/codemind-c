@@ -1,12 +1,13 @@
 #include<stdio.h>
 int main()
 {
-    int n,i,last_digit;
+    int n,i,r;
     scanf("%d",&n);
-    last_digit=n%10;
-    while(n>=10)
+    int last_digit=n%10;
+    for(;n!=0;)
     {
+        r=n%10;
         n/=10;
     }
-    printf("%d",last_digit+n);
+    printf("%d",last_digit+r);
 }
