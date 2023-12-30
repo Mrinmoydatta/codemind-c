@@ -1,12 +1,17 @@
 #include<stdio.h>
 int main()
 {
-    int n,k,m,b1,b2;
-    scanf("%d%d%d",&n,&k,&m);
-    b1=(n/(k*m));
-    b2=(n%(k*m));
-    if(b2==0)
-    printf("%d",b1);
+    int n,m,k,bag1,bag2;
+    scanf("%d%d%d",&n,&m,&k);
+    bag1=n/(k*m);
+    bag2=n%(k*m);
+    if(bag2==0)
+    {
+    printf("%d",bag1);
+    }
     else
-    printf("%d",b1+1);
+    {
+        printf("%d",bag1+1);
+    }
+    return 0;
 }
