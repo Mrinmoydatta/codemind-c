@@ -2,13 +2,13 @@
 #include<math.h>
 int main()
 {
-    int n,i,sq=0,s=0,p;
+    int n,i,sq=0,sum=0;
     scanf("%d",&n);
     for(i=1;i<=n;i++)
     {
-        sq=sq+pow(i,2);
-        s=s+i;
+        sq=sq+(i*i);
+        sum=sum+i;
     }
-    p=s*s;
-    printf("%d",p-sq);
+    int sum_sq=sum*sum;
+    printf("%d",abs(sq-sum_sq));
 }
