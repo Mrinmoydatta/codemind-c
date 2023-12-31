@@ -3,7 +3,7 @@ int main()
 {
     char str[20];
     scanf("%[^
-]s",&str);
+]s",str);
     int i,len=0;
     for(i=0;str[i]!=NULL;i++)
     {
