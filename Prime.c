@@ -1,17 +1,17 @@
 #include<stdio.h>
+#include<math.h>
 int main()
 {
-    int n,i,r,c=0;
+    int n,count=0;
     scanf("%d",&n);
-    for(i=1;i<=n;i++)
+    for(int i=1;i<=sqrt(n);i++)
     {
-        r=n%i;
-        if(r==0)
+        if(n%i==0)
         {
-        c=c+1;
+            count++;
         }
     }
-    if(n!=1 && c==2)
+    if(count==1)
     {
         printf("Prime");
     }
