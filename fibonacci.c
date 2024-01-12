@@ -1,14 +1,21 @@
 #include<stdio.h>
+int fibonacci(int n)
+{
+    if(n<=1)
+    {
+        return n;
+    }
+    else
+    {
+        return fibonacci(n-1)+fibonacci(n-2);
+    }
+}
 int main()
 {
-    int a=0,b=1,n,i,f;
+    int n;
     scanf("%d",&n);
-    printf("%d %d ",a,b);
-    for(i=1;i<=n-2;i++)
+    for(int i=0;i<n;i++)
     {
-        f=a+b;
-        printf("%d ",f);
-        a=b;
-        b=f;
+        printf("%d ",fibonacci(i));
     }
 }
