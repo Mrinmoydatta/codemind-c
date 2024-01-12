@@ -1,15 +1,18 @@
 #include<stdio.h>
 int main()
 {
-    int n,m,i,min,gcd;
-    scanf("%d%d",&n,&m);
-    (n>m)?min=m:min=n;
-    for(i=1;i<=min;i++)
+    int a,b,m,i,lcm;
+    scanf("%d%d",&a,&b);
+    for(i=1;i<=b;i++)
     {
-        if(n%i==0 && m%i==0)
+        m=a*i;
+        if(m%b==0)
         {
-            gcd=i;
+            lcm=m;
+            break;
         }
     }
+    int gcd=(a*b)/lcm;
     printf("%d",gcd);
+    
 }
